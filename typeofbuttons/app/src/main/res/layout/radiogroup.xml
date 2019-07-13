@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity" android:gravity="center">
+    <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/rgSex" android:layout_below="@id/tvResult">
+        <RadioButton
+                android:text="Male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/rbMale" android:layout_weight="1"
+                android:checked="true"/>
+        <RadioButton
+                android:text="FeMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/rbFeMale" android:layout_weight="1"/>
+        <RadioButton
+                android:text="Other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/rbOther" android:layout_weight="1"/>
+    </RadioGroup>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@android:drawable/ic_input_add"
+            android:id="@+id/imgBtSelect" android:layout_below="@id/rgSex"/>
+    <TextView
+            android:text="See Here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/tvResult" android:textSize="40sp"/>
+</RelativeLayout>

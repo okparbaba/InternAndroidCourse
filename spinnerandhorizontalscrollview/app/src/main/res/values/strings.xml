@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">spinnerandhorizontalscrollview</string>
+    <string-array name="spinner">
+        <item>Hello</item>
+        <item>How</item>
+        <item>are</item>
+        <item>you</item>
+        <item>Hello</item>
+    </string-array>
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">postimageretrofit</string>
+    <string name="select_image">Select Image</string>
+    <string name="upload_image">Post</string>
+</resources>

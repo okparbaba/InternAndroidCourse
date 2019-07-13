@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:id="@+id/image1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:contentDescription="No Image"
+                android:src="@drawable/guava"/>
+
+        <ImageView
+                android:id="@+id/image2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:contentDescription="No Image"
+                android:src="@drawable/jackfruit"/>
+
+        <ImageView
+                android:id="@+id/image3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:contentDescription="No Image"
+                android:src="@drawable/mix_fruit"/>
+
+        <ImageView
+                android:id="@+id/image4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:contentDescription="No Image"
+                android:src="@drawable/pomegranate"/>
+
+        <ImageView
+                android:id="@+id/image5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:contentDescription="No Image"
+                android:src="@drawable/strawberry"/>
+
+        <ImageView
+                android:id="@+id/image6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:contentDescription="No Image"
+                android:src="@drawable/zespri_kiwi"/>
+
+    </LinearLayout>
+</HorizontalScrollView>
