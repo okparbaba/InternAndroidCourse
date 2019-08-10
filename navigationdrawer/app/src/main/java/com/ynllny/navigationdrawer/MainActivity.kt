@@ -62,6 +62,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 Toast.makeText(this,"Hello",Toast.LENGTH_SHORT).show()
                 true
             }
+            R.id.action_about->{
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }

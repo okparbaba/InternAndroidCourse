@@ -8,7 +8,7 @@ import android.widget.SeekBar.OnSeekBarChangeListener
 import kotlinx.android.synthetic.main.activity_main.*
 
 @SuppressLint("Registered")
-class MainActivity : AppCompatActivity(),OnSeekBarChangeListener {
+class MainActivity : AppCompatActivity(), OnSeekBarChangeListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -18,15 +18,15 @@ class MainActivity : AppCompatActivity(),OnSeekBarChangeListener {
 
     override fun onProgressChanged(seekBar: SeekBar, progress: Int,
                                    fromUser: Boolean) {
-        tvprogress!!.text = progress.toString()
-        tvseekbarStatus!!.text = "Tracking Touch"
+        tvprogress.text = progress.toString()
+        tvseekbarStatus.text = "Tracking"
     }
 
     override fun onStartTrackingTouch(seekBar: SeekBar) {
-        tvseekbarStatus!!.text = "Started Tracking Touch"
+        tvseekbarStatus.text = "Start Tracking"
     }
 
     override fun onStopTrackingTouch(seekBar: SeekBar) {
-        tvseekbarStatus!!.text = "Stopped Tracking Touch"
+        tvseekbarStatus.text = "Stop Tracking"
     }
 }

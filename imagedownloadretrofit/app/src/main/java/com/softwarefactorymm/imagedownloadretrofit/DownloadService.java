@@ -80,7 +80,6 @@ public class DownloadService extends IntentService {
         long startTime = System.currentTimeMillis();
         int timeCount = 1;
         while ((count = bis.read(data)) != -1) {
-
             total += count;
             totalFileSize = (int) (fileSize / (Math.pow(1024, 2)));
             double current = Math.round(total / (Math.pow(1024, 2)));
@@ -110,7 +109,6 @@ public class DownloadService extends IntentService {
     }
 
     private void sendNotification(Download download){
-
         sendIntent(download);
         notificationBuilder.setProgress(100,download.getProgress(),false);
         notificationBuilder.setContentText("Downloading file "+ download.getCurrentFileSize() +"/"+totalFileSize +" MB");

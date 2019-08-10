@@ -8,6 +8,6 @@ class HorizontalScrollViewAcitvity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.horizontalscrollview)
+        setContentView(R.layout.scroll_view)
     }
 }

@@ -36,7 +36,7 @@ class AndroidVideoViewExample : Activity() {
         // create a progress bar while the video file is loading
         progressDialog = ProgressDialog(this@AndroidVideoViewExample)
         // set a title for the progress bar
-        progressDialog!!.setTitle("JavaCodeGeeks Android Video View Example")
+        progressDialog!!.setTitle("Android Video View Example")
         // set a message for the progress bar
         progressDialog!!.setMessage("Loading...")
         //set the progress bar not cancelable on users' touch

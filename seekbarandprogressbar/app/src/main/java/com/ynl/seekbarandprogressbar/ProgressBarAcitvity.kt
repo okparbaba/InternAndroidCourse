@@ -12,32 +12,21 @@ class ProgressBarAcitvity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.progressbar)
-
-
-        // when button is clicked, start the task
-        button1.setOnClickListener { v ->
-            // task is run on a thread
+        button.setOnClickListener {
             Thread(Runnable {
-                // dummy thread mimicking some operation whose progress cannot be tracked
-
-                // display the indefinite progressbar
                 this@ProgressBarAcitvity.runOnUiThread {
-                    progressBar1.visibility = View.VISIBLE
+                    progressBar.visibility = View.VISIBLE
                 }
-
-                // performing some dummy time taking operation
                 try {
-                    var i=0
-                    while(i<Int.MAX_VALUE){
+                    var i = 0
+                    while (i<1000000000){
                         i++
                     }
-                } catch (e: InterruptedException) {
+                }catch (e:InterruptedException){
                     e.printStackTrace()
                 }
-
-                // when the task is completed, make progressBar gone
                 this@ProgressBarAcitvity.runOnUiThread {
-                    progressBar1.visibility = View.GONE
+                    progressBar.visibility = View.GONE
                 }
             }).start()
         }

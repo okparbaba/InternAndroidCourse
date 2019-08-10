@@ -18,8 +18,10 @@ class MainActivity : AppCompatActivity() {
         webSettings.javaScriptEnabled = true
 
         val webViewClient = WebViewClientImpl(this)
+
         webView.webViewClient = webViewClient
 
-        webView.loadUrl("https://pyapyapyar.blogspot.com")
+        webView.loadUrl("https://www.facebook.com")
+
     }
 }

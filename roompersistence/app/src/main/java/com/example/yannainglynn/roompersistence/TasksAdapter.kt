@@ -2,13 +2,13 @@ package com.example.yannainglynn.roompersistence
 
 import android.content.Context
 import android.content.Intent
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 
-class TasksAdapter(private val mCtx: Context, private val taskList: List<Task>) : RecyclerView.Adapter<TasksAdapter.TasksViewHolder>() {
+class TasksAdapter(private val mCtx: Context, private val taskList: List<Task>) : androidx.recyclerview.widget.RecyclerView.Adapter<TasksAdapter.TasksViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TasksViewHolder {
         val view = LayoutInflater.from(mCtx).inflate(R.layout.recyclervew_task, parent, false)
@@ -31,7 +31,7 @@ class TasksAdapter(private val mCtx: Context, private val taskList: List<Task>) 
         return taskList.size
     }
 
-    inner class TasksViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
+    inner class TasksViewHolder(itemView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(itemView), View.OnClickListener {
 
         var textViewStatus: TextView
         var textViewTask: TextView

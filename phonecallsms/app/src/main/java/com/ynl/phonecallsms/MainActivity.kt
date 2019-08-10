@@ -13,6 +13,7 @@ import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlin.system.exitProcess
 
 @SuppressLint("Registered")
 class MainActivity : AppCompatActivity() {
@@ -68,7 +69,7 @@ class MainActivity : AppCompatActivity() {
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
             startActivity(intent)
             finish()
-            System.exit(0)
+            exitProcess(0)
         }
         Log.d("Tag", "Twice$twice")
         twice = true

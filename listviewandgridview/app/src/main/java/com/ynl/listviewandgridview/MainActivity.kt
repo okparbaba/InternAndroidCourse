@@ -1,22 +1,23 @@
 package com.ynl.listviewandgridview
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
 import com.ynl.listviewandgridview.listview.Employee
 import com.ynl.listviewandgridview.listview.MyListAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-
+    val lan = arrayOf("English","French","Spanish","Thailand","Malaysia","Cambodia","Hindi","Chinese"
+        ,"Japanese","Korean")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         val adapter: MyListAdapter?
         val empList : ArrayList<Employee> = generateEmployeeData()
         adapter = MyListAdapter(this, empList)
 
+//        val adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1,lan)
         listView.adapter = adapter
 
         listView.setOnItemClickListener { _, _, i, _ ->

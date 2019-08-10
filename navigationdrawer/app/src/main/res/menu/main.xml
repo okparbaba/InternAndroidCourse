@@ -9,4 +9,5 @@
           android:title="About"
           android:orderInCategory="100"
           app:showAsAction="never"/>
+    <item android:title="About" android:id="@+id/action_about"/>
 </menu>
